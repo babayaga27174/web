@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.login-container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-box {
+    padding: 20px;
+}
+
+.avatar {
+    background: #f8cdda;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+h2 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group label {
+    padding: 10px;
+    font-size: 18px;
+    color: #333333;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-group i#toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #888888;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.options .remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.options .forgot-password {
+    text-decoration: none;
+    color: #1d2b64;
+}
+
+.login-btn {
+    background: #1d2b64;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    background: #0f1a42;
+}
+
+/* Responsiveness */
+@media (max-width: 500px) {
+    .login-container {
+        padding: 10px;
+    }
+
+    .input-group label, .input-group input {
+        font-size: 14px;
+    }
+
+    .login-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
